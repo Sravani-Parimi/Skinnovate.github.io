@@ -1,16 +1,61 @@
+/* General Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #eaf6fc; /* Light pastel blue background */
+    color: #333; /* Neutral text color for readability */
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
+/* Header Styling */
+header {
+    background-color: #a9d6e5; /* Soft pastel blue */
+    color: #034078; /* Dark blue for contrast */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
     font-size: 2.5rem;
     font-weight: bold;
 }
 
-#recommendations .card {
-    margin: 1rem 0;
+header p {
+    font-size: 1rem;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+h3 {
+    color: #034078; /* Dark blue for headers */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+form {
+    margin-bottom: 20px;
+}
+
+select.form-select {
+    border: 2px solid #90e0ef; /* Light pastel blue border */
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #eaf6fc; /* Match the page background */
+    color: #034078; /* Dark blue text */
+}
+
+/* Card Styling */
+.card {
+    background-color: #d9f0ff; /* Softer pastel blue */
+    border: 1px solid #90e0ef;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .card img {
@@ -18,6 +63,41 @@ h1 {
     object-fit: cover;
 }
 
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    color: #034078;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+.card .btn-primary {
+    background-color: #90e0ef; /* Light blue button */
+    border: none;
+    color: #034078; /* Dark blue text */
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.card .btn-primary:hover {
+    background-color: #61c0d4; /* Slightly darker blue on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #a9d6e5; /* Soft pastel blue */
+    color: #034078;
+    text-align: center;
+    padding: 10px;
+}
+
 footer p {
     margin: 0;
+    font-size: 0.9rem;
 }

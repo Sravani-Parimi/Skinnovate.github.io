@@ -9,17 +9,24 @@
 </head>
 <body>
     <!-- Header with Navigation -->
-    <header class="navbar navbar-expand-lg" style="background-color: #a9d6e5;">
-        <div class="container-fluid">
-            <a class="navbar-brand mx-auto text-white" href="#" style="font-size: 2rem; font-weight: bold;">Skinnovate</a>
-            <nav>
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#how-to-use">How to Use</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="text-center py-3" style="background-color: #a9d6e5;">
+        <h1 class="display-3 text-white fw-bold">Skinnovate</h1>
+        <nav class="navbar navbar-expand-lg justify-content-center mt-3">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-white fw-semibold" href="#features">Features</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-white fw-semibold" href="#skin-problems">Skin Problems</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-white fw-semibold" href="#how-to-use">How to Use</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-white fw-semibold" href="#about">About</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Welcome Section -->
@@ -41,8 +48,45 @@
         </div>
     </section>
 
+    <!-- Skin Problems Section -->
+    <section id="skin-problems" class="py-5" style="background-color: #d9f0ff;">
+        <div class="container">
+            <h2 style="color: #034078;" class="text-center mb-4">Find Solutions for Your Skin Concerns</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Select Your Skin Concern</h3>
+                    <form id="skin-form">
+                        <select class="form-select" id="skin-concern" required>
+                            <option value="" disabled selected>Choose your concern</option>
+                            <option value="hydration">Dehydrated Skin</option>
+                            <option value="pigmentation">Pigmentation</option>
+                            <option value="sensitivity">Sensitive Skin</option>
+                            <option value="acne">Acne</option>
+                            <option value="aging">Aging Signs</option>
+                        </select>
+                    </form>
+
+                    <h3 class="mt-4">Price Range</h3>
+                    <form id="price-form">
+                        <select class="form-select" id="price-range">
+                            <option value="" disabled selected>Select price range</option>
+                            <option value="below500">Below 500 INR</option>
+                            <option value="500to1000">500 - 1000 INR</option>
+                            <option value="above1000">Above 1000 INR</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="col-md-8">
+                    <h3>Recommended Products</h3>
+                    <div id="recommendations" class="row"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- How to Use Section -->
-    <section id="how-to-use" class="py-5" style="background-color: #d9f0ff;">
+    <section id="how-to-use" class="py-5" style="background-color: #eaf6fc;">
         <div class="container">
             <h2 style="color: #034078;" class="text-center mb-4">How to Use</h2>
             <p style="color: #333;">
@@ -65,9 +109,10 @@
 
     <!-- Footer -->
     <footer style="background-color: #a9d6e5; color: white;" class="text-center py-3">
-        <p>&copy; 2024 Skinnovate | Created by Sravani Parimi</p>
+        <p>&copy; 2024 Skinnovate | Created by Team Skinnovate</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 </html>

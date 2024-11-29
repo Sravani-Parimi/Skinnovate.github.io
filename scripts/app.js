@@ -1,4 +1,3 @@
-// Data for product recommendations
 const recommendations = {
     hydration: [
         {
@@ -82,7 +81,6 @@ const recommendations = {
     ]
 };
 
-// Dynamically handle recommendations only on the Skin Problems Page
 if (document.getElementById("skin-form")) {
     document.getElementById("skin-form").addEventListener("change", filterProducts);
     document.getElementById("price-form").addEventListener("change", filterProducts);
